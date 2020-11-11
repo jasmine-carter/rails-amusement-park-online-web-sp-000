@@ -7,6 +7,7 @@ class AttractionsController < ApplicationController
 
   def show
     @attraction = Attraction.find_by(id: params[:id])
+<<<<<<< HEAD
     @ride = @attraction.rides.build(user_id: current_user.id)
   end
 
@@ -35,6 +36,11 @@ class AttractionsController < ApplicationController
 
   def attraction_params
     params.require(:attraction).permit(:name, :min_height, :nausea_rating, :happiness_rating, :tickets)
+=======
+  end
+
+  def create
+>>>>>>> 9e9ae3ecbe58f5a684e7030487da6be4b67e2d57
   end
 
 end

@@ -30,6 +30,10 @@ class UsersController < ApplicationController
     end
 
     def destroy
+<<<<<<< HEAD
+=======
+      binding.pry
+>>>>>>> 9e9ae3ecbe58f5a684e7030487da6be4b67e2d57
       session.clear
       redirect_to root_path
     end

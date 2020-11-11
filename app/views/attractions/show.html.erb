@@ -1,5 +1,6 @@
 <h1><%=@attraction.name%></h1>
 
+<<<<<<< HEAD
 <%=@attraction.min_height %>
 <%=@attraction.tickets %>
 <%=@attraction.nausea_rating%>
@@ -14,3 +15,13 @@
     <%=f.submit "Go on this ride"%>
     <%end%>
   <%end%>
+=======
+<%= form_for @attraction |f| %>
+<%=f.text_field :name %>
+<%=f.text_field :min_height %>
+<%=f.text_field :tickets %>
+<%=f.text_field :nausea_rating%>
+<%=f.text_field :happiness_rating%>
+<%=f.submit "Go on this ride"%>
+<%end%>
+>>>>>>> 9e9ae3ecbe58f5a684e7030487da6be4b67e2d57
